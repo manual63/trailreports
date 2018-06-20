@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Landing from '../landing';
-
 import styles from './style.less';
 
 class Layout extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     render() {
@@ -15,7 +13,8 @@ class Layout extends React.Component {
                 <header className={styles.header}>
                     <h1 className="text-center">Trail Reports</h1>
                 </header>
-                <Landing />
+                {/* Routes cause components to render here */}
+                {this.props.children}
             </div>
         );
     }
