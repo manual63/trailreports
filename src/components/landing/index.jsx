@@ -5,10 +5,12 @@ import styles from './styles.less';
 class Landing extends React.Component {
     constructor(props) {
         super(props);
+
+        this.goToLogin = this.goToLogin.bind(this);
     }
 
     goToLogin() {
-        this.props.history.push('/login');
+        this.props.router.push('/login');
     }
 
     render() {
