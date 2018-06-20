@@ -1,0 +1,4 @@
+src/vendor/*
+dist/*
+README.md
+*.json
