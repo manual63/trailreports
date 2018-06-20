@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LoginUtils from '../../utilities/loginUtils';
+
 class Login extends React.Component {
     constructor() {
         super();
@@ -21,8 +23,17 @@ class Login extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        //TODO: Send credentials to a secure login process 
-        console.log(this.state);
+        
+        const loginUtils = new LoginUtils();
+        // submitCredentials will use fetch and return a promise
+        loginUtils.submitCredentials(this.state.username, this.state.password);
+
+        // Once promise returns go to reports view
+        this.goToDashboard();
+    }
+
+    goToDashboard() {
+        this.props.router.push('/dashboard');
     }
 
     render() {
