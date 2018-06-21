@@ -19,7 +19,7 @@ class Dashboard extends React.Component {
                 <div className={styles.navWrapper}>
                     <ul className="nav nav-pills">
                         <li className="nav-item">
-                            <a className={`nav-link ${pathName === '/reports' ? 'active' : ''}`} href="#/reports">Reports</a>
+                            <a className={`nav-link ${pathName === '/reports' || pathName === '/dashboard' ? 'active' : ''}`} href="#/reports">Reports</a>
                         </li>
                         <li className="nav-item">
                             <a className={`nav-link ${pathName === '/create' ? 'active' : ''}`} href="#/create">Create</a>
