@@ -8,6 +8,8 @@ import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Reports from './components/dashboard/reports';
 import Create from './components/dashboard/create';
+import TrailConditions from './components/dashboard/trailconditions';
+import Settings from './components/dashboard/settings';
 
 const wrapper = document.getElementById('app');
 wrapper ? ReactDOM.render((
@@ -19,6 +21,8 @@ wrapper ? ReactDOM.render((
                 <IndexRoute component={Reports} />
                 <Route path="/reports" component={Reports} />
                 <Route path="/create" component={Create} />
+                <Route path="/trailconditions" component={TrailConditions} />
+                <Route path="/settings" component={Settings} />
             </Route>
         </Route>
     </Router>

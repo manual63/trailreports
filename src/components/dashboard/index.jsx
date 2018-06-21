@@ -11,40 +11,24 @@ class Dashboard extends React.Component {
         }
     }
 
-    componentDidUpdate() {
-        console.log(this.props.location.pathname);
-        this.setActiveNav(this.props.location.pathname);
-    }
-
-    setActiveNav(pathname) {
-        switch(pathname) {
-            case '/reports':
-                this.setState({activeNav: 'reports'});
-                break;
-            case '/create':
-                this.setState({activeNav: 'create'});
-                break;
-        }
-    }
-
     render() {
-        const activeNav = this.state.activeNav;
+        const pathName = this.props.location.pathname;
 
         return (
             <div>
                 <div className={styles.navWrapper}>
                     <ul className="nav nav-pills">
                         <li className="nav-item">
-                            <a className={`nav-link ${activeNav === 'reports' ? 'active' : ''}`} href="#/reports">Reports</a>
+                            <a className={`nav-link ${pathName === '/reports' ? 'active' : ''}`} href="#/reports">Reports</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${activeNav === 'create' ? 'active' : ''}`} href="#/create">Create</a>
+                            <a className={`nav-link ${pathName === '/create' ? 'active' : ''}`} href="#/create">Create</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#/trailconditions">Trail Conditions</a>
+                            <a className={`nav-link ${pathName === '/trailconditions' ? 'active' : ''}`} href="#/trailconditions">Trail Conditions</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#/settings">Settings</a>
+                            <a className={`nav-link ${pathName === '/settings' ? 'active' : ''}`} href="#/settings">Settings</a>
                         </li>
                     </ul>
                 </div>
