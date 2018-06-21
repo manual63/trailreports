@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Login extends React.Component {
+class Create extends React.Component {
     constructor() {
         super();
     }
@@ -8,10 +8,10 @@ class Login extends React.Component {
     render() {
         return (
             <div>
-                <h2>Login</h2>
+                <h2>Create</h2>
             </div>
         );
     }
 }
 
-export default Login;
+export default Create;
