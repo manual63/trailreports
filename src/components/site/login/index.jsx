@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoginUtils from '../../utilities/loginUtils';
+import LoginUtils from '../../../utilities/loginUtils';
 
 class Login extends React.Component {
     constructor() {
