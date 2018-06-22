@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './styles.less';
+
 class CreateAccount extends React.Component {
     constructor() {
         super();
@@ -7,9 +9,9 @@ class CreateAccount extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div className={styles.content}>
                 <h2>Create Account</h2>
-            </React.Fragment>
+            </div>
         );
     }
 }

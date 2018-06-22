@@ -2,6 +2,8 @@ import React from 'react';
 
 import LoginUtils from '../../../utilities/loginUtils';
 
+import styles from './styles.less';
+
 class Login extends React.Component {
     constructor() {
         super();
@@ -38,7 +40,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.content}>
                 <h2>Login</h2>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row">

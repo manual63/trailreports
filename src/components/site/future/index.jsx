@@ -1,9 +1,11 @@
 import React from 'react';
 
+import styles from './styles.less';
+
 class Future extends React.Component {
     render() {
         return (
-            <React.Fragment>
+            <div className={styles.content}>
                 <h2>Future Application Features</h2>
                 <p>
                     Here is a list of features that are planned for this site.
@@ -16,7 +18,7 @@ class Future extends React.Component {
                         <strong>User Trail Reporting:</strong> If trail users find issues on the trail they will be able to report them directly to the trail organization using this app.
                     </li>
                 </ul>
-            </React.Fragment>
+            </div>
         );
     }
 }

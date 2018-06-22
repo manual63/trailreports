@@ -1,9 +1,11 @@
 import React from 'react';
 
+import styles from './styles.less';
+
 class About extends React.Component {
     render() {
         return (
-            <div>
+            <div className={styles.content}>
                 <h2>About</h2>
                 <p>
                     This application is designed to be used by trail building and maintenance organizations to keep track of the conditions of 
