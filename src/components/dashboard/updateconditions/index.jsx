@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TrailConditions extends React.Component {
+class UpdateConditions extends React.Component {
     constructor() {
         super();
     }
@@ -8,10 +8,10 @@ class TrailConditions extends React.Component {
     render() {
         return (
             <div>
-                <h2>Trail Conditions</h2>  
+                <h2>Update Trail Conditions</h2>  
             </div>
         );
     }
 }
 
-export default TrailConditions;
+export default UpdateConditions;

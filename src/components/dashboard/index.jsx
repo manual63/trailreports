@@ -25,7 +25,7 @@ class Dashboard extends React.Component {
                             <a className={`nav-link ${pathName === '/create' ? 'active' : ''}`} href="#/create">Create</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${pathName === '/trailconditions' ? 'active' : ''}`} href="#/trailconditions">Trail Conditions</a>
+                            <a className={`nav-link ${pathName === '/updateconditions' ? 'active' : ''}`} href="#/updateconditions">Update Conditions</a>
                         </li>
                         <li className="nav-item">
                             <a className={`nav-link ${pathName === '/settings' ? 'active' : ''}`} href="#/settings">Settings</a>
